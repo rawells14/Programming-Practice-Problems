@@ -18,6 +18,8 @@ public class longestCollatzSequence {
         System.out.println("Run Time: " + (System.currentTimeMillis() - time) + " milliseconds");
     }
 
+    
+
     public static long sequence(long n) {
         long amt = 1;
         while (true) {
