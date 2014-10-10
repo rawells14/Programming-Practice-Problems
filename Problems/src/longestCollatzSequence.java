@@ -5,7 +5,6 @@ public class longestCollatzSequence {
         long largest = 0;
         long largestnum = 0;
         long time = System.currentTimeMillis();
-        System.currentTimeMillis();
         for (int i = 1000000; i>=2; i--) {
             if (sequence(i) > largest) {
                 largest = sequence(i);
