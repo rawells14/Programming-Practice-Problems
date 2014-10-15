@@ -2,7 +2,7 @@
 public class amicableNumbers {
 
     public static void main(String[] args) {
-        System.out.println(d(220    ));
+        System.out.println(d(220   ));
     }
 
     public static int d(int n) {
