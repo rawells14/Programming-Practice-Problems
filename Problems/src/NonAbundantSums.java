@@ -3,7 +3,7 @@ public class NonAbundantSums {
     public static void main(String args[]) {
         long total = 0;
 
-        for (long i = 2; i < 15000; i++) {
+        for (long i = 2; i < 28000; i++) {
             if (isNotSumOfAbundant((int) i)) {
                 total += i;
             }
@@ -21,6 +21,9 @@ public class NonAbundantSums {
             if (n % i == 0) {
                 total += i;
                 total += n / i;
+            }
+            if (total > n) {
+                return true;
             }
         }
         return total > n;
