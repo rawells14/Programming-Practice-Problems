@@ -2,27 +2,17 @@ public class CircularPrimes {
 
     public static void main(String args[]) {
         int amt = 0;
-        label1:
-        for (int i = 0; i < 100; i++) {
-            String n = Integer.toString(i);
-            int num = i;
-            boolean isCircular = true;
-            for (int j = 0; j < n.length(); j++) {
-                if (!(isPrime(num))) {
-                    break label1;
-                }
-                num = cycle(num);
-            }
-            amt++;
+        for (int i = 0; i < 10; i++) {
+            
         }
-        System.out.println(amt);
     }
 
     public static int cycle(int n) {
         String s = Integer.toString(n);
         String temp = s.substring(0, 1);
         s = s.substring(1, s.length());
-        s += temp;
+        s = s + temp;
+        
         return Integer.parseInt(s);
     }
 
