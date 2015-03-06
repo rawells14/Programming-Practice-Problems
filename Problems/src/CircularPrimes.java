@@ -3,7 +3,7 @@ public class CircularPrimes {
     public static void main(String args[]) {
         int amt = 0;
         for (int i = 0; i < 10; i++) {
-            
+
         }
     }
 
@@ -12,7 +12,7 @@ public class CircularPrimes {
         String temp = s.substring(0, 1);
         s = s.substring(1, s.length());
         s = s + temp;
-        
+
         return Integer.parseInt(s);
     }
 
